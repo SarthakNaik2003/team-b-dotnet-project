@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleWebAppMVC</name>
+    </assembly>
+    <members>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksApiController.Get">
+            <summary>Returns a list of all the tasks</summary>
+        </member>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksApiController.Get(System.String)">
+            <summary>Returns the task with the specified ID if it exists</summary>
+            <param name="id">Task ID</param>
+        </member>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksApiController.Post(SimpleWebAppMVC.Models.Task)">
+            <summary>Adds a new task</summary>
+            <param name="newTask">New task</param>
+        </member>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksApiController.Put(System.String,SimpleWebAppMVC.Models.Task)">
+            <summary>Updates the task with the specified ID if it exists</summary>
+            <param name="id">Task ID</param>
+            <param name="updatedTask">Updated task</param>
+        </member>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksApiController.Delete(System.String)">
+            <summary>Deletes the task with the specified ID if it exists</summary>
+            <param name="id">Task ID</param>
+        </member>
+        <member name="M:SimpleWebAppMVC.Controllers.TasksController.GetSorted(System.String)">
+            <param name="sort">Sort column and order</param>
+            <returns>a list of tasks sorted by the specified sort column and order</returns>
+        </member>
+        <member name="P:SimpleWebAppMVC.Models.Task.Title">
+            <example>Task #1</example>
+        </member>
+        <member name="P:SimpleWebAppMVC.Models.Task.Description">
+            <example>The first task</example>
+        </member>
+        <member name="P:SimpleWebAppMVC.Models.Task.Status">
+            <summary>Valid status codes: [ "N/A", "Not Started", "Started", "In Progress", "Almost Done", "Completed" ]</summary>
+            <example>N/A</example>
+        </member>
+    </members>
+</doc>
