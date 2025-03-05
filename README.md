@@ -38,3 +38,15 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8QFedeTf4p75oNpg6SLFaLY/WmaeXOuJcvPfWjjaR
         name: wazuh-agent
         enabled: yes
         state: started
+
+
+
+      <ossec_config>
+  <client>
+    <server>
+      <address>{{ hostvars['localhost']['ansible_host'] }}</address>
+      <port>1514</port>
+      <protocol>tcp</protocol>
+    </server>
+  </client>
+</ossec_config>
